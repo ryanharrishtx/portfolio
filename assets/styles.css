@@ -1,0 +1,151 @@
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+/* Global Selector */
+* {
+    width: 100%;
+    margin: 0;
+}
+
+/* Establishing Variables */
+:root {
+    --yellow: yellow;
+    --dark: black;
+    --fullWidth: 100%;
+    --boldFont: 'Alfa Slab One', cursive;
+    --uppercase: uppercase;
+}
+
+/* Header and Nav */
+header {
+    background-color: var(--dark);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    width:75%;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-grow: center;
+    padding: 0;
+  }
+  
+  nav li {
+    margin: 0 10px;
+    text-transform: var(--uppercase);
+  }
+  
+  nav a {
+    text-decoration: none;
+    font-family: var(--boldFont);
+    font-size: 100px;
+    color: var(--yellow);
+  }
+
+/* Sections */
+#about {
+  background-color: var(--dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#works {
+  background-color: var(--yellow);
+  display: flex;
+  flex-direction: row;
+  /* align-content: stretch; */
+}
+
+#contact {
+  background-color: var(--dark);
+  color: var(--yellow);
+}
+
+/* Global Styling to be used for Titles */
+.title {
+  font-family: var(--boldFont);
+  text-transform: var(--uppercase);
+  margin: 10px;
+  font-size: 80px;
+}
+
+/* About Section Elements */
+#box {
+  width: 50%;
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  color: var(--yellow);
+}
+
+#box img {
+  max-width: 50%;
+  height: auto;
+}
+
+.introduction {
+  font-family: var(--boldFont);
+  text-transform: var(--uppercase);
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 80px;
+}
+
+#box p {
+  text-align: left;
+}
+
+/* Works Section Elements */
+.works-title{
+
+}
+
+.card-container {
+  flex-direction: row;
+  /* align-self: stretch; */
+  flex-grow: 1;
+}
+
+.card {
+  flex-direction: row;
+  max-width: 25%;
+  padding: 10px;
+}
+
+.card:hover {
+  
+}
+
+/* Contact Section Elements */
+.contact-list {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.contact-list a {
+  font-family: var(--boldFont);
+  font-size: 80px;
+  text-transform: var(--uppercase);
+  color: var(--yellow);
+  text-decoration: none;
+  transition: color 0.5s;
+
+}
+
+.contact-list a:hover {
+  color: white;
+}
+
+.contact-list a::after {
+  color: var(--yellow);
+  text-decoration: none;
+}

@@ -1,19 +1,24 @@
 /* Importing Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 
-/* Global Selector */
-* {
-    width: 100%;
-    margin: 0;
-}
-
 /* Establishing Variables */
 :root {
     --yellow: yellow;
     --dark: black;
+    --disabled: gray;
     --fullWidth: 100%;
     --boldFont: 'Alfa Slab One', cursive;
     --uppercase: uppercase;
+}
+
+/* Global Selector */
+* {
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: var(--dark);
 }
 
 /* Header and Nav */
@@ -22,6 +27,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin: 29px;
 }
 
 nav {
@@ -52,21 +58,28 @@ nav {
 /* Sections */
 #about {
   background-color: var(--dark);
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 75%;
+  margin: auto;
 }
 
 #works {
   background-color: var(--yellow);
-  display: flex;
-  flex-direction: row;
-  /* align-content: stretch; */
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 #contact {
   background-color: var(--dark);
   color: var(--yellow);
+  padding: 20px;
+  margin: 20px;
 }
 
 /* Global Styling to be used for Titles */
@@ -79,7 +92,7 @@ nav {
 
 /* About Section Elements */
 #box {
-  width: 50%;
+  /* max-width: 80%; */
   flex: 1;
   padding: 20px;
   text-align: center;
@@ -94,34 +107,76 @@ nav {
 .introduction {
   font-family: var(--boldFont);
   text-transform: var(--uppercase);
-  margin-bottom: 10px;
   text-align: left;
   font-size: 80px;
+  max-width: 90%;
 }
 
 #box p {
+  font-size: 20px;
   text-align: left;
+  padding-top: 10px;
+  max-width: 80%;
 }
 
 /* Works Section Elements */
-.works-title{
-
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px;
 }
 
-.card-container {
-  flex-direction: row;
-  /* align-self: stretch; */
-  flex-grow: 1;
+#featured {
+  position: sticky;
+    width: auto;
+    height: 300px;
+    margin: 20px;
+    right: 50%;
+}
+
+#featured img {
+  width: auto;
+  height: 300px;
+}
+
+.featured-card {
+  width: auto;
+  height: 300px;
+  padding: 10px;
+  background-color: black;
+  margin: 20px;
+  box-sizing: border-box;
 }
 
 .card {
-  flex-direction: row;
-  max-width: 25%;
+  width: 250px;
+  height: 250px;
   padding: 10px;
+  background-color: black;
+  margin: 20px;
+  box-sizing: border-box;
+}
+
+.card img {
+  width: 250px;
+  height: 250px;
+}
+
+.card p {
+  color: var(--dark);
+  font-family: var(--boldFont);
+  text-transform: var(--uppercase);
+  font-size: 15px;
+  margin: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .card:hover {
-  
+  transform: translateX(10px);
+  transition: transform 0.5s linear;
 }
 
 /* Contact Section Elements */

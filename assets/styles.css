@@ -132,7 +132,6 @@ nav {
     width: auto;
     height: 300px;
     margin: 20px;
-    right: 50%;
 }
 
 #featured img {
@@ -147,6 +146,18 @@ nav {
   background-color: black;
   margin: 20px;
   box-sizing: border-box;
+  justify-content: center;
+}
+
+.featured-card p {
+  color: var(--dark);
+  font-family: var(--boldFont);
+  text-transform: var(--uppercase);
+  font-size: 15px;
+  margin: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .card {

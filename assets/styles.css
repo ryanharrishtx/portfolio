@@ -24,23 +24,21 @@ body {
 /* Header and Nav */
 header {
     background-color: var(--dark);
-    width: 100%;
     display: flex;
     justify-content: center;
-    margin: 29px;
 }
 
 nav {
     display: flex;
-    justify-content: space-evenly;
-    width:75%;
+    padding: 20px;
   }
   
   nav ul {
     list-style: none;
     display: flex;
-    flex-grow: center;
-    padding: 0;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    text-align: center;
   }
   
   nav li {
@@ -51,19 +49,28 @@ nav {
   nav a {
     text-decoration: none;
     font-family: var(--boldFont);
-    font-size: 100px;
+    font-size: 4vw;
     color: var(--yellow);
+    transition: color 0.5s;
   }
+
+  nav a:hover {
+    color: white;
+  }
+  
+  nav a::after {
+    color: var(--yellow);
+    text-decoration: none;
+  }
+
 
 /* Sections */
 #about {
-  background-color: var(--dark);
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 75%;
   margin: auto;
+  width: 100%;
 }
 
 #works {
@@ -76,10 +83,8 @@ nav {
 }
 
 #contact {
-  background-color: var(--dark);
   color: var(--yellow);
   padding: 20px;
-  margin: 20px;
 }
 
 /* Global Styling to be used for Titles */
@@ -87,37 +92,60 @@ nav {
   font-family: var(--boldFont);
   text-transform: var(--uppercase);
   margin: 10px;
-  font-size: 80px;
+  font-size: 4vw;
+  text-align:center;
 }
 
 /* About Section Elements */
-#box {
-  /* max-width: 80%; */
-  flex: 1;
-  padding: 20px;
-  text-align: center;
-  color: var(--yellow);
+.image-container {
+  display: flex;
+  margin: 15px 0px 15px 0px;
 }
 
-#box img {
+.box {
+  background: url("/assets/images/headshot.png") no-repeat;
+  padding: 300px;
+  background-position: right;
+  background-size: contain;
+  margin-right: 50px;
+  transition: 0.5s ease-in;
+}
+
+.box:hover {
+  background: url("/assets/images/hearteyes.png") no-repeat;
+  background-position: right;
+  background-size: contain;
+  margin-right: 50px;
+}
+
+.box img {
   max-width: 50%;
   height: auto;
+}
+
+.bio-info {
+  padding: 20px;
+  max-width: 55%;
+  color: var(--yellow);
 }
 
 .introduction {
   font-family: var(--boldFont);
   text-transform: var(--uppercase);
   text-align: left;
-  font-size: 80px;
-  max-width: 90%;
+  font-size: 4vw;
+  max-width: 60%;
 }
 
-#box p {
+.bio-info p {
   font-size: 20px;
   text-align: left;
   padding-top: 10px;
-  max-width: 80%;
+  font-weight: bold;
+  max-width: 60%;
 }
+
+
 
 /* Works Section Elements */
 #container {
@@ -160,6 +188,11 @@ nav {
   justify-content: center;
 }
 
+.featured-card:hover {
+  transform: translateY(-10px);
+  transition: transform 0.5s linear;
+}
+
 .card {
   width: 250px;
   height: 250px;
@@ -195,11 +228,12 @@ nav {
   display: flex;
   flex-direction: row;
   text-align: center;
+  justify-content: space-around;
 }
 
 .contact-list a {
   font-family: var(--boldFont);
-  font-size: 80px;
+  font-size: 4vw;
   text-transform: var(--uppercase);
   color: var(--yellow);
   text-decoration: none;
@@ -214,4 +248,50 @@ nav {
 .contact-list a::after {
   color: var(--yellow);
   text-decoration: none;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 786px) {
+  .box {
+    padding: 193px;
+  }
+  
+  .box img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .introduction {
+    font-family: var(--boldFont);
+    text-transform: var(--uppercase);
+    text-align: left;
+    font-size: 4vw;
+    max-width: 100%;
+  }
+
+  nav ul {
+    justify-content: center;
+  }
+
+  nav a {
+    font-size: 3rem;
+  }
+
+  .contact-list a {
+    font-size: 33px;
+  }
+
+  .bio-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bio-info p{
+    font-size: 2vw;
+    text-align: left;
+    padding-top: 10px;
+    font-weight: bold;
+    max-width: 100%;
+  }
 }

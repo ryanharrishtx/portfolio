@@ -103,7 +103,7 @@ nav {
 }
 
 .box {
-  background: url("./images/headshot.png") no-repeat;
+  background: url("images/headshot.png") no-repeat;
   padding: 300px;
   background-position: right;
   background-size: contain;
@@ -112,7 +112,7 @@ nav {
 }
 
 .box:hover {
-  background: url("./images/hearteyes.png") no-repeat;
+  background: url("images/hearteyes.png") no-repeat;
   background-position: right;
   background-size: contain;
   margin-right: 50px;

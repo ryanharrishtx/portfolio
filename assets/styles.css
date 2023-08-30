@@ -103,16 +103,16 @@ nav {
 }
 
 .box {
-  background: url("/assets/images/headshot.png") no-repeat;
+  background: url("./images/headshot.png") no-repeat;
   padding: 300px;
   background-position: right;
   background-size: contain;
   margin-right: 50px;
-  transition: 0.5s ease-in;
+  transition: 0.25s;
 }
 
 .box:hover {
-  background: url("/assets/images/hearteyes.png") no-repeat;
+  background: url("./images/hearteyes.png") no-repeat;
   background-position: right;
   background-size: contain;
   margin-right: 50px;

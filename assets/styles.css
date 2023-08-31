@@ -75,16 +75,18 @@ nav {
 
 #works {
   background-color: var(--yellow);
-    padding: 25px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
 }
 
 #contact {
   color: var(--yellow);
   padding: 20px;
+  width: 100%;
 }
 
 /* Global Styling to be used for Titles */
@@ -251,7 +253,7 @@ nav {
 }
 
 /* Mobile Responsiveness */
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 390px) {
   .box {
     padding: 193px;
   }
@@ -274,11 +276,11 @@ nav {
   }
 
   nav a {
-    font-size: 3rem;
+    font-size: 6vw;
   }
 
   .contact-list a {
-    font-size: 33px;
+    font-size: 4vw;
   }
 
   .bio-info {
@@ -294,4 +296,36 @@ nav {
     font-weight: bold;
     max-width: 100%;
   }
+}
+
+/* iPhone 12 */
+@media screen and (max-width: 390px) {
+#about {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+#works {
+  padding: 0;
+}
+
+.title {
+  font-size: 11vw;
+}
+
+.box {
+  padding: 100px;
+}
+
+#featured img {
+  width: 300px;
+}
+
+#container {
+  justify-content: center;
+}
 }

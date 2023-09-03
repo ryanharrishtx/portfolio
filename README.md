@@ -1,12 +1,12 @@
 # Personal Portfolio
 This is the first iteration of my personal web development portfolio. I have a deep love for design and creating captivating, unique, and user-friendly customer-facing experiences. This personal portfolio uses a lot of my own taste in design (maximalism, high contrast, and a little bit of humor). As you poke around the page, you may find a fun easter egg! Below are the User Story and Acceptance Criteria:
 
-### User Story
+## User Story
 AS AN employer
 I WANT to view a potential employee's deployed portfolio of work samples
 SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
 
-### Acceptance Criteria
+## Acceptance Criteria
 GIVEN I need to sample a potential employee's previous work
 WHEN I load their portfolio
 THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
@@ -23,5 +23,5 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 ![screenshot of deployed portfolio](./assets/images/deployedscreenshot.jpeg)
 
-### Link to Deployed Webpage
+## Link to Deployed Webpage
 <a href="https://ryanharrishtx.github.io/week-1-challenge">Link</a>

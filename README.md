@@ -24,4 +24,4 @@ THEN I am presented with a responsive layout that adapts to my viewport
 ![screenshot of deployed portfolio](./assets/images/deployedscreenshot.jpeg)
 
 ## Link to Deployed Webpage
-<a href="https://ryanharrishtx.github.io/week-1-challenge">Link</a>
+<a href="https://ryanharrishtx.github.io/portfolio">Link</a>
